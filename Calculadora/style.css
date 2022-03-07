@@ -1,0 +1,32 @@
+body{
+	/*min-width: 1280px;*/
+	background-color: #f0f0f0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+.operations{
+	display: grid;
+	grid-column: 1
+	justify-items:  center;
+}
+.operations button{
+	border-radius: 5px;
+	background-color: #003684;
+	color: #fff;
+}
+#title{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: center;
+}
+#result{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: center;
+	background-color: #003684;
+	color: #fff;
+	border-radius: 2px;
+	width: 100%;
+	font-size: 20px;
+}
