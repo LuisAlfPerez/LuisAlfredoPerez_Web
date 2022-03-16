@@ -1,0 +1,14 @@
+body{
+	/*min-width: 1280px;*/
+	background-color: #f0f0f0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+h1, #calcularLatLon, #checarClima{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.entradaDatos{
+	display: block;
+}
