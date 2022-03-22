@@ -18,7 +18,7 @@ buttonClimate.addEventListener("click", function(){
 	fetch("http://api.openweathermap.org/data/2.5/weather?lat="+lat.value+"&lon="+lon.value+"100&appid=95247eb54a479f0788dd40295d4ba5e4")
 	.then(function(response){
 		response.json().then(function(respjson){
-			clima.innerText = JSON.stringify(respjson);
+			clima.innerText = (parseInt(JSON.stringify(respjson.main.temp))-273.15).toString()+" °C";
 			console.log(respjson);
 		});
 	})
